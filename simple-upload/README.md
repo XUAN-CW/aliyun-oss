@@ -1,8 +1,8 @@
 ---
 title: simple-upload
 tags: 
-date: 2022-01-26 12:21:33
-id: 1643170893747588000
+date: 2022-01-26 13:44:08
+id: 1643175848648282900
 ---
 # 摘要
 
@@ -21,7 +21,7 @@ id: 1643170893747588000
 
 ## 创建项目
 
- [spring initializer](https://start.spring.io/) 创建项目，选择 **2.3.2.RELEASE** 版本（创建完了再改也行）
+创建 maven 项目
 
 ##  [pom.xml](pom.xml) 
 
@@ -33,15 +33,11 @@ id: 1643170893747588000
         </dependency>
 ```
 
-##  [SimpleUploadApplicationTests.java](src\test\java\org\acme\simpleupload\SimpleUploadApplicationTests.java) 
+##   [SimpleUploadApplicationTest.java](src\main\java\SimpleUploadApplicationTest.java) 
 
 # 查看上传结果
 
 从 [Bucket 列表](https://oss.console.aliyun.com/bucket) 中进入你文件上传到的 bucket 即可看到你上传的文件
-
-
-
-
 
 
 
