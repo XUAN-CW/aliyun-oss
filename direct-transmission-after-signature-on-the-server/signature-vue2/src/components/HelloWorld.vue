@@ -26,6 +26,7 @@
 //  import {policy} from './policy'
 //  import { getUUID } from '@/utils'
 import axios from "axios";
+  // import qs from 'qs';
 
 export default {
   name: "singleUpload",
@@ -86,11 +87,13 @@ export default {
     },
     beforeUpload(file) {
       let _self = this;
-      console.log(file.__filename);
+      console.log(file)
 
       axios
         .get("http://localhost:8088/oss/getPolicy")
         .then(function (response) {
+          
+          console.log('beforeUpload');
           console.log(response.data);
           _self.dataObj.policy = response.data.policy;
           _self.dataObj.signature = response.data.signature;
