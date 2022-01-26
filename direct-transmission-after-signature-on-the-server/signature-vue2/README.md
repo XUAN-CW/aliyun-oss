@@ -1,24 +1,7 @@
-# signature-vue2
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+---
+title: signature-vue2
+tags: 
+date: 2022-01-26 17:36:47
+id: 1643189807341208100
+---
+# 摘要
