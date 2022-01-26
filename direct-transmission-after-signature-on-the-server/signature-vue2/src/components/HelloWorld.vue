@@ -23,10 +23,7 @@
   </div>
 </template>
 <script>
-//  import {policy} from './policy'
-//  import { getUUID } from '@/utils'
 import axios from "axios";
-  // import qs from 'qs';
 
 export default {
   name: "singleUpload",
@@ -58,7 +55,9 @@ export default {
           this.value !== null && this.value !== "" && this.value !== undefined
         );
       },
-      set: function () {},
+      set: function (newValue) {
+        console.log(newValue);
+      },
     },
   },
   data() {
@@ -79,21 +78,24 @@ export default {
     emitInput(val) {
       this.$emit("input", val);
     },
-    handleRemove() {
+    handleRemove(file, fileList) {
+      console.log(file);
+
+      console.log(fileList);
       this.emitInput("");
     },
-    handlePreview() {
+    handlePreview(file) {
+      console.log(file);
       this.dialogVisible = true;
     },
     beforeUpload(file) {
       let _self = this;
-      console.log(file)
+      console.log(file);
 
       axios
         .get("http://localhost:8088/oss/getPolicy")
         .then(function (response) {
-          
-          console.log('beforeUpload');
+          console.log("beforeUpload");
           console.log(response.data);
           _self.dataObj.policy = response.data.policy;
           _self.dataObj.signature = response.data.signature;
@@ -103,8 +105,10 @@ export default {
           _self.dataObj.host = response.data.host;
         })
         .catch(function (error) {
+          console.log('error');
           console.log(error);
         });
+      console.log("this.dataObj");
       console.log(this.dataObj);
 
       // return new Promise((resolve, reject) => {
@@ -122,8 +126,8 @@ export default {
       //   })
       // })
     },
-
-    handleUploadSuccess(file) {
+    handleUploadSuccess(res, file) {
+      console.log(res);
       console.log("上传成功...");
       this.showFileList = true;
       this.fileList.pop();
