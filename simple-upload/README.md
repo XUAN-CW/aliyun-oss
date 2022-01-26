@@ -6,7 +6,7 @@ id: 1643175848648282900
 ---
 # 摘要
 
-参考 [简单上传](https://help.aliyun.com/document_detail/84781.html) 、 [阿里云oss文件上传.html](assets\references\阿里云oss文件上传.html) ，使用 spring boot 集成阿里云 OSS 服务
+参考 [简单上传](https://help.aliyun.com/document_detail/84781.html) 、 [阿里云oss文件上传.html](assets\references\阿里云oss文件上传.html) ，使用阿里云 OSS 服务
 
 # 环境准备
 
