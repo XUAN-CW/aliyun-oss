@@ -12,8 +12,8 @@ id: 1643169684743348700
 
 # 目标
 
-1. AccessKey
-2. Bucket 
+1. accessKey
+2. bucket 
 3. endpoint : [公共云下OSS Region和Endpoint对照表](https://help.aliyun.com/document_detail/31837.html) 
 
 # 步骤
