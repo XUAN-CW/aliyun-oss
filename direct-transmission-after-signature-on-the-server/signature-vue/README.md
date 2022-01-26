@@ -7,3 +7,21 @@ id: 1643184688769191100
 # 摘要
 
 服务端签名后直传 - 前端
+
+# 代码实现
+
+
+
+```
+npm install --save axios
+npm install element-plus --save
+```
+
+
+
+
+
+
+
+
+
