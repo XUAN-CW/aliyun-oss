@@ -82,7 +82,7 @@ import axios from 'axios'
         console.log(file.__filename)
 
     axios
-      .get("http://localhost:8088//oss/getPolicy")
+      .get("http://localhost:8088/oss/getPolicy")
       .then(function (response) {
         console.log(response.data);
             _self.dataObj.policy = response.data.policy;
