@@ -77,8 +77,9 @@ import axios from 'axios'
       handlePreview() {
         this.dialogVisible = true;
       },
-      beforeUpload() {
+      beforeUpload(file) {
         let _self = this;
+        console.log(file.__filename)
 
     axios
       .get("http://localhost:8088//oss/getPolicy")
@@ -87,7 +88,7 @@ import axios from 'axios'
             _self.dataObj.policy = response.data.policy;
             _self.dataObj.signature = response.data.signature;
             _self.dataObj.ossaccessKeyId = response.data.accessid;
-            _self.dataObj.key = response.data.dir ;
+            _self.dataObj.key = response.data.dir + '_${filename}';
             _self.dataObj.dir = response.data.dir;
             _self.dataObj.host = response.data.host;
       })
