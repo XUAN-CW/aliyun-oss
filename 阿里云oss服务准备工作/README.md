@@ -13,7 +13,7 @@ id: 1643169684743348700
 # 目标
 
 1. accessKey
-2. bucket 
+2. bucket :  [Bucket 列表](https://oss.console.aliyun.com/bucket) 中可见你的 bucket 
 3. endpoint : [公共云下OSS Region和Endpoint对照表](https://help.aliyun.com/document_detail/31837.html) 
 
 # 步骤
