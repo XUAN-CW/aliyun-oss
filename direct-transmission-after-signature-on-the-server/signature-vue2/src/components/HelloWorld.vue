@@ -40,11 +40,24 @@
 </style>
 
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
       imageUrl: "",
     };
+  },
+
+  mounted() {
+    axios
+      .get("http://localhost:8088//oss/getPolicy")
+      .then(function (response) {
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   },
   methods: {
     handleAvatarSuccess(res, file) {
