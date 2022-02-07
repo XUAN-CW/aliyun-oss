@@ -93,7 +93,7 @@ export default {
       console.log(file);
 
       axios
-        .get("http://180.76.247.58:8088/oss/getPolicy")
+        .get("http://localhost:8088/oss/getPolicy")
         .then(function (response) {
           console.log("beforeUpload");
           console.log(response.data);
