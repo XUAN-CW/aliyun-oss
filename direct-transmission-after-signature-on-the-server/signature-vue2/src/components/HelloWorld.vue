@@ -88,11 +88,11 @@ export default {
       console.log(file);
       this.dialogVisible = true;
     },
-    beforeUpload(file) {
+    async beforeUpload(file) {
       let _self = this;
       console.log(file);
 
-      axios
+      await axios
         .get("http://localhost:8088/oss/getPolicy")
         .then(function (response) {
           console.log("beforeUpload");
