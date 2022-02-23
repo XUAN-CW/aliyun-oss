@@ -15,3 +15,14 @@ id: 1643181986847328200
 https://help.aliyun.com/document_detail/44199.html 
 
 ![image-20220126212520999](assets/images/image-20220126212520999.png)
+
+# 遇到的问题
+
+前端 `beforeUpload` 方法中需要同步，否则后端还没返回，文件就开始上传了，导致上传失败。解决方法见 [axios 开启同步的方法.html](assets\references\axios 开启同步的方法.html) 
+
+
+
+
+
+
+
