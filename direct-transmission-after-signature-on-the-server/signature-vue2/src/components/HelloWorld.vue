@@ -105,7 +105,7 @@ export default {
           _self.dataObj.host = response.data.host;
         })
         .catch(function (error) {
-          console.log('error');
+          console.log("error");
           console.log(error);
         });
       console.log("this.dataObj");
