@@ -68,5 +68,48 @@ spring:
 
 从 [Bucket 列表](https://oss.console.aliyun.com/bucket) 中进入你文件上传到的 bucket 即可看到你上传的文件
 
+# 参考
+
+[Aliyun Spring Boot OSS 示例](https://github.com/alibaba/aliyun-spring-boot/blob/master/aliyun-spring-boot-samples/aliyun-oss-spring-boot-sample/README-zh.md) 
+
+# bug 解决
+
+如果你导入下面这个版本，那就会发现 OSS 版本并没有被管理，所以需要你自己对 OSS 管理
+
+```xml
+        <dependencies>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.6.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+```
+
+下面给出一个可用版本
+
+```xml-dtd
+            <!-- 阿里云 OSS -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alicloud-oss</artifactId>
+                <version>2.2.0.RELEASE</version>
+            </dependency>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
